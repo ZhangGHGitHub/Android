@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginactivity.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "南京工业职业技术大学学生管理系统"
+        android:textColor = "#000000"
+        android:textSize = "20dp"
+        app:layout_constraintTop_toTopOf = "parent"
+        android:layout_marginTop = "20dp"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        app:srcCompat="@drawable/ic_ngy"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <!-- 图片导入方式 srcCompat -->
+    <TextView
+        android:id = "@+id/user_id"
+        android:text = "学号："
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/user_pwd"
+        android:text="密码："
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/user_id"
+        android:layout_marginTop="20dp"
+        />
+    <!-- EditText disits属性限制输入的字符-->
+    <!-- android:digits="0123456789" 替换为android:inputType:number -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:hint="请输入学号"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:paddingTop="0dp"
+        android:inputType="number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/user_id"
+        app:layout_constraintLeft_toRightOf="@+id/user_id"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="200px"
+        android:layout_marginRight="20dp"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="请输入密码"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:password="true"
+        android:paddingTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/user_pwd"
+        app:layout_constraintLeft_toRightOf="@+id/user_pwd"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="200px"
+        android:layout_marginRight="20dp"
+        />
+    <RadioGroup
+        android:id="@+id/radioButton"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_pwd"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:id="@+id/radioButton_student"
+            android:text="学生"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioButton_teacher"
+            android:text="教职工"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+    <View
+        android:id="@+id/button_box"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/radioButton"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@drawable/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/button_box"
+        app:layout_constraintTop_toTopOf="@id/button_box"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@drawable/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/login"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/button_box"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
