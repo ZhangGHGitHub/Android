@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.loginactivity"
+        applicationId "com.example.bmicalculator"
         minSdkVersion 30
         targetSdkVersion 30
         versionCode 1
@@ -36,7 +36,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
     implementation 'com.googlecode.aviator:aviator:4.2.10'
     //Aviator 表达式
 }
