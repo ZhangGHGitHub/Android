@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         //3.2判断用户名密码是否正确，根据判断结果进行处理，成功则跳转，失败则给出提示
         if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
             Toast.makeText(LoginActivity.this,"用户名或密码不能为空",Toast.LENGTH_SHORT).show();
-        }else if(!username.equals("android") && !password.equals("123456")){
+        }else if(!username.equals("123") || !password.equals("123")){
             Toast.makeText(LoginActivity.this,"用户名或密码错误",Toast.LENGTH_SHORT).show();
             //提高用户体验,清空输入框，光标移动到密码框内
             etPassword.setText("");
@@ -37,13 +37,12 @@ public class LoginActivity extends AppCompatActivity {
         } else{
             //成功后将username传递给限一个Activity界面
             //使用intent对象传递数据
-//            final Intent intent = new Intent(LoginActivity.this,InfoActivity.class);
-//            intent.putExtra("username",username);
-//            startActivity(intent);
-//            finish();
+            final Intent intent = new Intent(LoginActivity.this,InfoActivity.class);
+            intent.putExtra("username",username);
+            startActivity(intent);
             Toast.makeText(LoginActivity.this,"登录信息" + username + "," + password,Toast.LENGTH_SHORT);
+            finish();
         }
         });
-
     }
 }
