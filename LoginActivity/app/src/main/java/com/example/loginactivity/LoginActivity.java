@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
             } else{
                 //成功后将username传递给限一个Activity界面
                 //使用intent对象传递数据 参数（第一个页面，第二个页面)
-                final Intent intent = new Intent(LoginActivity.this,InfoActivity.class);
+                final Intent intent = new Intent(LoginActivity.this,ViewBindingActivity.class);
                 intent.putExtra("username",username);
                 startActivity(intent);
 //            Toast.makeText(LoginActivity.this,"登录信息" + username + "," + password,Toast.LENGTH_SHORT);

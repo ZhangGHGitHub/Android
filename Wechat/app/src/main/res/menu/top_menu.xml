@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_launcher_search"
+            android:title="@string/action_search"
+            app:showAsAction="ifRoom|collapseActionView"
+            app:actionViewClass="android.widget.SearchView" />
+
+        <item
+            android:id="@+id/teamChat"
+            android:icon="@drawable/faqiqunliao"
+            android:title="@string/menu_teamChat"
+             />
+
+        <item
+            android:id="@+id/addFriends"
+            android:icon="@drawable/addfriends"
+            android:title="@string/menu_addFridens"/>
+
+        <item
+            android:id="@+id/look"
+            android:icon="@drawable/sao"
+            android:title="@string/menu_look"/>
+
+        <item
+            android:id="@+id/getMoneny"
+            android:icon="@drawable/shoufukuan"
+            android:title="@string/menu_getMoneny"/>
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="@string/menu_help"/>
+</menu>

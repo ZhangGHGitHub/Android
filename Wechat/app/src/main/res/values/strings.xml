@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeChat</string>
+    <string name="title_home">微信</string>
+    <string name="title_find">发现</string>
+    <string name="title_personal">我</string>
+    <string name="title_tongxunlu">通讯录</string>
+
+     <string name="action_search">检索</string>
+     <string name="action_more">更多</string>
+     <string name="menu_addFridens">添加朋友</string>
+     <string name="menu_teamChat">发起群聊</string>
+     <string name="menu_getMoneny">收款</string>
+     <string name="menu_look">扫一扫</string>
+     <string name="menu_help">帮助与反馈</string>
+
+</resources>

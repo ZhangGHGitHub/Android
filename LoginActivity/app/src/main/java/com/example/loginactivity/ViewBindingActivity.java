@@ -75,7 +75,7 @@ public class ViewBindingActivity extends AppCompatActivity implements View.OnCli
             sex = binding.radioButtonWoman.getText().toString();
         }
         if(isRight){
-            String tips = "用户名：" + binding.etName.getText()
+            String tips = "VIEWBINDING用户名用户名：" + binding.etName.getText()
                     +   ",手机号：" + binding.etIphone.getText()
                     +   ",性别："  + sex + "\n喜欢的课程有："
                     +   getCheckBoxText();

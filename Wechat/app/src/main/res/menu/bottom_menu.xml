@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/WechatMessage"
+        android:icon="@drawable/weixin"
+        android:title="微信" />
+    <item
+        android:id="@+id/Tongxunlu"
+        android:icon="@drawable/tongxunlu"
+        android:title="通讯录" />
+    <item
+        android:id="@+id/Faxian"
+        android:icon="@drawable/faxian"
+        android:title="发现" />
+    <item
+        android:id="@+id/Wo"
+        android:icon="@drawable/wo"
+        android:title="我" />
+
+</menu>

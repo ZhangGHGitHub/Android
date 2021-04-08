@@ -8,7 +8,7 @@
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
     android:orientation="vertical"
-    tools:context=".InfoActivity">
+    tools:context=".ViewBindingActivity">
     <ImageView
         android:layout_width="104dp"
         android:layout_height="104dp"

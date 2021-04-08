@@ -83,7 +83,7 @@ public class InfoActivity extends AppCompatActivity implements View.OnClickListe
         RadioButton btn = findViewById(id);
         String sex = btn.getText().toString();
 
-        String tips = "用户名：" + username
+        String tips = "UNVIEWBINDING用户名：" + username
                 +   ",手机号：" + phone
                 +   ",性别："  + sex + "\n喜欢的课程有："
                 +   selected;
