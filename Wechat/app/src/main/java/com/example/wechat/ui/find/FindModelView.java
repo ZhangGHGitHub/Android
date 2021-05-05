@@ -9,7 +9,7 @@ public class FindModelView extends ViewModel {
 
     public FindModelView() {
         mText = new MutableLiveData<>();
-        mText.setValue("这是发现页面");
+        mText.setValue("这是页面一");
     }
 
     public LiveData<String> getText() {

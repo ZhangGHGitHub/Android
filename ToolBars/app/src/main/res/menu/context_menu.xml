@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_copy"
+        android:icon="@drawable/ic_baseline_content_copy_24"
+        android:title="拷贝"
+        />
+
+    <item
+        android:id="@+id/item_paste"
+        android:icon="@drawable/ic_baseline_sticky_note_2_24"
+        android:title="粘贴"
+        />
+    <item
+        android:id="@+id/item_clear"
+        android:icon="@drawable/ic_baseline_clear_all_24"
+        android:title="清除"
+        />
+</menu>

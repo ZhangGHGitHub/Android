@@ -9,7 +9,7 @@ public class TongxunluModelView extends ViewModel {
 
     public TongxunluModelView() {
         mText = new MutableLiveData<>();
-        mText.setValue("这是通讯录页面");
+        mText.setValue("这是联系人页面");
     }
 
     public LiveData<String> getText() {

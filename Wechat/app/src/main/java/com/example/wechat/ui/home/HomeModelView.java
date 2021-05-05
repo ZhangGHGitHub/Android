@@ -9,7 +9,7 @@ public class HomeModelView extends ViewModel {
 
     public HomeModelView() {
         mText = new MutableLiveData<>();
-        mText.setValue("这是聊天主页面");
+        mText.setValue("这是主页面");
     }
 
     public LiveData<String> getText() {
