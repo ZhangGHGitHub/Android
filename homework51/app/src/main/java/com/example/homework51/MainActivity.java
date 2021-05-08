@@ -25,7 +25,6 @@ import com.example.homework51.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityMainBinding binding;
     private AlertDialog.Builder builder;
-    private SparseArray<Fragment> fragments;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,16 +66,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         builder.show();
 
         btnCal.setOnClickListener(v -> {
-            int n1 = Integer.parseInt(num1.getText().toString());
-            int n2 = Integer.parseInt(num2.getText().toString());
+            String n1 = (num1.getText().toString());
+            String n2 = (num2.getText().toString());
             if (!TextUtils.isEmpty(num1.toString()) && !TextUtils.isEmpty(num2.toString())) {
                 switch (v.getId()) {
                     case R.id.btn_calculate:
-                        sum(String.valueOf(n1+n2));
+                        sum(String.valueOf(Integer.parseInt(n1 + n2)));
                         builder.create().dismiss();
                 }
+            }else {
+                Toast.makeText(this, "不能为空", Toast.LENGTH_LONG);
             }
-            Toast.makeText(this, "不能为空", Toast.LENGTH_LONG);
         });
         btnCan.setOnClickListener(v -> {
             dialog.dismiss();
@@ -94,11 +94,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sum1.setText(str);
     }
     private void replaceFragment(Fragment fragment){
-//        //获取FragmentManager，通过getSupportFragmentManager调用
-//        //开启一个事务
-//        //向容器内添加或替换事务，一般通过replace方法来实现，传入的参数为:传入容器的id以及待添加的碎片实例。
-//        //返回栈
-//        //提交事务
+            //获取FragmentManager，通过getSupportFragmentManager调用
+            //开启一个事务
+            //向容器内添加或替换事务，一般通过replace方法来实现，传入的参数为:传入容器的id以及待添加的碎片实例。
+            //返回栈
+            //提交事务
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment,fragment)
                 .addToBackStack(null)
@@ -106,21 +106,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void questionTwo() {
-            replaceFragment(new LifeSystemFragment());
+        replaceFragment(new LifeSystemFragment());
     }
 
     private void questionOne() {
         String n1 = binding.etNum1.getText().toString();
         String n2 = binding.etNum2.getText().toString();
-        if(n1 != null && n1 == "" && n2 != null && n2 == "" ){
+
+        if(n1 != null && n2 != null){
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            int num1 = Integer.parseInt(binding.etNum1.getText().toString());
-            int num2 = Integer.parseInt(binding.etNum2.getText().toString());
+            int num1 = Integer.parseInt(n1);
+            int num2 = Integer.parseInt(n2);
             int sum = num1 + num2;
             intent.putExtra("sum", Integer.toString(sum));
             startActivity(intent);
+        }else {
+            Toast.makeText(MainActivity.this,"不能为空！！！", Toast.LENGTH_SHORT).show();
         }
-        Toast.makeText(MainActivity.this,"不能为空！！！", Toast.LENGTH_SHORT).show();
     }
 
 }
