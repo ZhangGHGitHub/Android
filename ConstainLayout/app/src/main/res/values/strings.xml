@@ -5,4 +5,12 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_item_tools">Tools</string>
+    <string name="menu_item_gallery">Gallery</string>
+    <string name="menu_item_communicate">Communicate</string>
+    <string name="menu_item_share">Share</string>
+    <string name="menu_item_send">Send</string>
+    <string name="navigation_drawer_open">Open navigation  drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 </resources>

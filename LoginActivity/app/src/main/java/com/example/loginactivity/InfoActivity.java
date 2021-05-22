@@ -13,7 +13,11 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/**
+ *
+ *  2021/05/21更新文件存储
+ *  功能记住账号密码
+ * */
 public class InfoActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener{
     private LinearLayout linearLayout;
     private EditText etName, etPhone;
@@ -26,6 +30,7 @@ public class InfoActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_info);
 
         //初始化页面布局

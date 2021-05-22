@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HomeWork0516</string>
+    <string name="homework_title">1、请使用CoordinatorLayout控件，协调FloatingActionButton和Snackbar的显示，当用户点击页面底部的FloatingActionButton时，弹出Snackbar，提示“是否新增一条短信？”，同时FloatingActionButton上移，使Snackbar不会覆盖FloatingActionButton。</string>
+</resources>
