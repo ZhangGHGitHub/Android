@@ -56,7 +56,8 @@ public class SecondActivity extends AppCompatActivity implements SeekBar.OnSeekB
                     binding.cardView.setRadius(progress);
                     break;
                 case R.id.cardContentPadding:
-                    binding.cardView.setPadding(progress,progress,progress,progress);
+                    //应该是ContentPadding
+                    binding.cardView.setContentPadding(progress,progress,progress,progress);
                     break;
                 case R.id.cardElevation:
                     binding.cardView.setElevation(progress);
