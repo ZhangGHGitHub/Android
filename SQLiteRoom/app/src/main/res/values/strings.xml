@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQLite数据库案例</string>
+    <string-array name="student_arr" >
+        <item>软件2018</item>
+        <item>软件2019</item>
+        <item>软件2020</item>
+        <item>软件2021</item>
+    </string-array>
+
+</resources>

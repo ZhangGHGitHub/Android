@@ -1,0 +1,2 @@
+rootProject.name = "SQLiteRoom"
+include ':app'
